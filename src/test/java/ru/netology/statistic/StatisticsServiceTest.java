@@ -20,9 +20,9 @@ public class StatisticsServiceTest {
     void findOnMax () {
         StatisticsService service = new StatisticsService();
 
-        long[] incomesInBillions = {5, 5, 8, 4, 12, 12, 8, 6, 11, 11, 3};
+        long[] incomesInBillions = {12, 50, 8, 4, 5, 3, 8, 6, 11, 11, 12};
 
-        long expected = 12;
+        long expected = 50;
         long actual = service.findMax(incomesInBillions);
 
         Assertions.assertEquals(expected, actual);
